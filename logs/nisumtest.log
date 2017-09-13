@@ -1,0 +1,186 @@
+2017-09-13 20:39:04,766 [WrapperListener_start_runner] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'nisumtest-1.0.0-SNAPSHOT'              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-09-13 20:39:04,962 [WrapperListener_start_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-09-13 20:39:05,131 [WrapperListener_start_runner] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-09-13 20:39:05,333 [WrapperListener_start_runner] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-09-13 20:39:05,333 [WrapperListener_start_runner] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-09-13 20:39:05,427 [WrapperListener_start_runner] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6cdce1f4: startup date [Wed Sep 13 20:39:05 UTC 2017]; root of context hierarchy
+2017-09-13 20:39:06,893 [WrapperListener_start_runner] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-09-13 20:39:07,896 [WrapperListener_start_runner] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-09-13 20:39:08,308 [WrapperListener_start_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-09-13 20:39:08,312 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: nisumtestFlow
+2017-09-13 20:39:08,313 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3b3fd548
+2017-09-13 20:39:08,369 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: nisumtestFlow.stage1
+2017-09-13 20:39:08,397 [WrapperListener_start_runner] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /opt/mule/./.mule/nisumtest-1.0.0-SNAPSHOT/queue-tx-log/tx1.log and /opt/mule/./.mule/nisumtest-1.0.0-SNAPSHOT/queue-tx-log/tx2.log
+2017-09-13 20:39:08,407 [WrapperListener_start_runner] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /opt/mule/./.mule/nisumtest-1.0.0-SNAPSHOT/queue-xa-tx-log/tx1.log and /opt/mule/./.mule/nisumtest-1.0.0-SNAPSHOT/queue-xa-tx-log/tx2.log
+2017-09-13 20:39:08,702 [WrapperListener_start_runner] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/opt/mule/apps/nisumtest-1.0.0-SNAPSHOT/nisumtest.xml'}]"
+2017-09-13 20:39:08,702 [WrapperListener_start_runner] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/opt/mule/apps/nisumtest-1.0.0-SNAPSHOT/nisumtest.xml'}]"
+2017-09-13 20:39:08,703 [WrapperListener_start_runner] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'nisumtest-1.0.0-SNAPSHOT'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-09-13 20:39:08,704 [WrapperListener_start_runner] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-09-13 20:39:08,705 [WrapperListener_start_runner] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-09-13 20:39:08,760 [WrapperListener_start_runner] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8082/nisum
+2017-09-13 20:39:08,764 [WrapperListener_start_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-09-13 20:39:08,766 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: nisumtestFlow
+2017-09-13 20:39:08,767 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: nisumtestFlow.stage1
+2017-09-13 20:39:08,836 [WrapperListener_start_runner] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: nisumtest-1.0.0-SNAPSHOT                              *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Wrapper Manager: Mule PID #134, Wrapper PID #132                 *
+**********************************************************************
+2017-09-13 21:01:19,451 [[nisumtest-1.0.0-SNAPSHOT].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=b0b8b110-98c6-11e7-ab4c-0242ac130002
+  payload=org.mule.transport.NullPayload
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+    accept-encoding=gzip, deflate, br
+    accept-language=en-US,en;q=0.8
+    connection=keep-alive
+    host=localhost:8082
+    http.listener.path=/nisum/
+    http.method=GET
+    http.query.params=ParameterMap{[]}
+    http.query.string=
+    http.relative.path=
+    http.remote.address=/172.19.0.1:40266
+    http.request.path=/nisum
+    http.request.uri=/nisum
+    http.scheme=http
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    upgrade-insecure-requests=1
+    user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2017-09-13 21:01:56,492 [[nisumtest-1.0.0-SNAPSHOT].HTTP_Listener_Configuration.worker.03] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=c6d565b0-98c6-11e7-ab4c-0242ac130002
+  payload=org.mule.transport.NullPayload
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+    accept-encoding=gzip, deflate, br
+    accept-language=en-US,en;q=0.8
+    cache-control=max-age=0
+    connection=keep-alive
+    host=localhost:8082
+    http.listener.path=/nisum/
+    http.method=GET
+    http.query.params=ParameterMap{[]}
+    http.query.string=
+    http.relative.path=
+    http.remote.address=/172.19.0.1:40272
+    http.request.path=/nisum
+    http.request.uri=/nisum
+    http.scheme=http
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    upgrade-insecure-requests=1
+    user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
+2017-09-13 23:25:32,150 [WrapperListener_start_runner] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'nisumtest-1.0.0-SNAPSHOT'              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-09-13 23:25:32,373 [WrapperListener_start_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-09-13 23:25:32,555 [WrapperListener_start_runner] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-09-13 23:25:32,777 [WrapperListener_start_runner] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-09-13 23:25:32,777 [WrapperListener_start_runner] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2017-09-13 23:25:32,893 [WrapperListener_start_runner] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@65e02713: startup date [Wed Sep 13 23:25:32 UTC 2017]; root of context hierarchy
+2017-09-13 23:25:34,719 [WrapperListener_start_runner] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-09-13 23:25:35,971 [WrapperListener_start_runner] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-09-13 23:25:36,669 [WrapperListener_start_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-09-13 23:25:36,674 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: nisumtestFlow
+2017-09-13 23:25:36,674 [WrapperListener_start_runner] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@59f9ac8c
+2017-09-13 23:25:36,725 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: nisumtestFlow.stage1
+2017-09-13 23:25:36,761 [WrapperListener_start_runner] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /opt/mule/./.mule/nisumtest-1.0.0-SNAPSHOT/queue-tx-log/tx1.log and /opt/mule/./.mule/nisumtest-1.0.0-SNAPSHOT/queue-tx-log/tx2.log
+2017-09-13 23:25:36,771 [WrapperListener_start_runner] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /opt/mule/./.mule/nisumtest-1.0.0-SNAPSHOT/queue-xa-tx-log/tx1.log and /opt/mule/./.mule/nisumtest-1.0.0-SNAPSHOT/queue-xa-tx-log/tx2.log
+2017-09-13 23:25:37,172 [WrapperListener_start_runner] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/opt/mule/apps/nisumtest-1.0.0-SNAPSHOT/nisumtest.xml'}]"
+2017-09-13 23:25:37,172 [WrapperListener_start_runner] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/opt/mule/apps/nisumtest-1.0.0-SNAPSHOT/nisumtest.xml'}]"
+2017-09-13 23:25:37,173 [WrapperListener_start_runner] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'nisumtest-1.0.0-SNAPSHOT'                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-09-13 23:25:37,174 [WrapperListener_start_runner] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-09-13 23:25:37,174 [WrapperListener_start_runner] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-09-13 23:25:37,224 [WrapperListener_start_runner] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8082/nisum
+2017-09-13 23:25:37,228 [WrapperListener_start_runner] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-09-13 23:25:37,239 [WrapperListener_start_runner] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: nisumtestFlow
+2017-09-13 23:25:37,249 [WrapperListener_start_runner] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: nisumtestFlow.stage1
+2017-09-13 23:25:37,478 [WrapperListener_start_runner] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: nisumtest-1.0.0-SNAPSHOT                              *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Wrapper Manager: Mule PID #131, Wrapper PID #129                 *
+**********************************************************************
+2017-09-13 23:25:47,291 [[nisumtest-1.0.0-SNAPSHOT].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/
+2017-09-13 23:25:47,291 [[nisumtest-1.0.0-SNAPSHOT].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/nisum/]
+2017-09-13 23:25:47,466 [[nisumtest-1.0.0-SNAPSHOT].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/favicon.ico
+2017-09-13 23:25:47,466 [[nisumtest-1.0.0-SNAPSHOT].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/nisum/]
+2017-09-13 23:25:55,460 [[nisumtest-1.0.0-SNAPSHOT].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 
+org.mule.DefaultMuleMessage
+{
+  id=e40254e0-98da-11e7-ba19-0242ac130002
+  payload=org.mule.transport.NullPayload
+  correlationId=<not set>
+  correlationGroup=-1
+  correlationSeq=-1
+  encoding=UTF-8
+  exceptionPayload=<not set>
+
+Message properties:
+  INVOCATION scoped properties:
+  INBOUND scoped properties:
+    accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+    accept-encoding=gzip, deflate, br
+    accept-language=en-US,en;q=0.8
+    connection=keep-alive
+    host=localhost:8082
+    http.listener.path=/nisum/
+    http.method=GET
+    http.query.params=ParameterMap{[]}
+    http.query.string=
+    http.relative.path=
+    http.remote.address=/172.19.0.1:51154
+    http.request.path=/nisum
+    http.request.uri=/nisum
+    http.scheme=http
+    http.uri.params=ParameterMap{[]}
+    http.version=HTTP/1.1
+    upgrade-insecure-requests=1
+    user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+  OUTBOUND scoped properties:
+  SESSION scoped properties:
+}
